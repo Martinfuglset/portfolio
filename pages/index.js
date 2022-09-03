@@ -16,6 +16,8 @@ export default function Home() {
           <a href='/'>
             Martin Fuglset
           </a>
+          <a>Lights off</a>
+          <a>Menu</a>
         </p>
       </header>
 
