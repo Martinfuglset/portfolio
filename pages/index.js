@@ -14,9 +14,9 @@ export default function Home() {
       <header className={styles.header}>
         <p>
           <a href='/'>
-            Martin Fuglset
+            Martin Fuglset&nbsp;
           </a>
-          <a>Lights off</a>
+          <a>Lights off&nbsp;</a>
           <a>Menu</a>
         </p>
       </header>
@@ -27,20 +27,17 @@ export default function Home() {
         </h1>
 
         <div className={styles.grid}>
-          <a href="/cv" className={styles.card}>
+          <a href="/cv">
             <h2>CV</h2>
             <p>CV</p>
           </a>
 
-          <a href="/projects" className={styles.card}>
+          <a href="/projects">
             <h2>Projects</h2>
             <p>Project 1</p>
           </a>
 
-          <a
-            href="abilities"
-            className={styles.card}
-          >
+          <a href="abilities">
             <h2>Abilities</h2>
             <p>Python</p>
           </a>
@@ -51,10 +48,10 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles.grid}>
         <a href='mailto:fuglsetm@gmail.com'>
-          Email 
+          Email&nbsp; 
         </a>
         <a href='https://github.com/Martinfuglset'>
-          GitHub 
+          GitHub&nbsp; 
         </a>
         <a href='https://www.linkedin.com/in/martinfuglset/'>
           LinkedIn
