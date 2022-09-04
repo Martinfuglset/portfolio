@@ -6,7 +6,7 @@ export default function Home() {
       <Head>
         <title>Martin Fuglset | Portfolio</title>
         <meta name="description" content="Created by Martin Fuglset" />
-        <link rel="icon" href="/Vector.ico" />
+        <link rel="icon" href="/Vectorblue.ico" />
       </Head>
 
       <header>
