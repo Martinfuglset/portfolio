@@ -1,17 +1,15 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Martin Fuglset | Portfolio</title>
         <meta name="description" content="Created by Martin Fuglset" />
         <link rel="icon" href="/Vector.ico" />
       </Head>
 
-      <header className={styles.header}>
+      <header>
         <p>
           <a href='/'>
             Martin Fuglset&nbsp;
@@ -21,32 +19,42 @@ export default function Home() {
         </p>
       </header>
 
-      <main className={styles.main}>
+      <main>
         <h1 className="text-8xl font-regular">
           Portfolio
         </h1>
 
-        <div className={styles.grid}>
-          <a href="/cv">
-            <h2>CV</h2>
-            <p>CV</p>
-          </a>
-
-          <a href="/projects">
-            <h2>Projects</h2>
-            <p>Project 1</p>
-          </a>
-
-          <a href="abilities">
-            <h2>Abilities</h2>
-            <p>Python</p>
-          </a>
-
+        <div class="box-content h-32 w-32">
+          <div class="border-t-2">
+            <a href="/cv">
+              <h2>CV</h2>
+              <p>CV</p>
+            </a>
+          </div>
         </div>
+
+        <div class="box-content h-32 w-32">
+          <div class="border-t-2">
+            <a href="/projects">
+              <h2>Projects</h2>
+              <p>Project 1</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="box-content h-32 w-32">
+          <div class="border-t-2">
+            <a href="abilities">
+              <h2>Abilities</h2>
+              <p>Python</p>
+            </a>
+          </div>
+        </div>
+      
       </main>
 
-      <footer className={styles.footer}>
-        <div className={styles.grid}>
+      <footer>
+        <div>
         <a href='mailto:fuglsetm@gmail.com'>
           Email&nbsp; 
         </a>
