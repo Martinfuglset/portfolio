@@ -6,7 +6,7 @@ export default function Home() {
       <Head>
         <title>Martin Fuglset | Portfolio</title>
         <meta name="description" content="Created by Martin Fuglset" />
-        <link rel="icon" href="/Vectorblue.ico" />
+        <link rel="icon" href="/Vector.ico" />
       </Head>
 
       <header>
@@ -20,34 +20,44 @@ export default function Home() {
       </header>
 
       <main>
-        <h1 className="text-8xl font-regular">
+        <h1 className="text-6xl font-regular">
           Portfolio
         </h1>
 
-        <div class="box-content h-32 w-32">
-          <div class="border-t-2">
-            <a href="/cv">
-              <h2>CV</h2>
-              <p>CV</p>
-            </a>
+        <div class="box-content h-32 w-72 border-t-2">
+          <div class="flex justify-between">
+            <div>
+              <a href="/projects">Projects</a>
+            </div>
+            <div class="text-right">
+                Housing price analysis<br></br>
+                NLP image generation<br></br>
+                Monte Carlo simulation
+            </div>
           </div>
         </div>
 
-        <div class="box-content h-32 w-32">
-          <div class="border-t-2">
-            <a href="/projects">
-              <h2>Projects</h2>
-              <p>Project 1</p>
-            </a>
+        <div class="box-content h-32 w-72 border-t-2">
+          <div class="flex justify-between">
+            <div>
+              <a href="/abilities">Abilites</a>
+            </div>
+            <div class="text-right">
+                Python<br></br>
+                JavaSctipt<br></br>
+                C++
+            </div>
           </div>
         </div>
 
-        <div class="box-content h-32 w-32">
-          <div class="border-t-2">
-            <a href="abilities">
-              <h2>Abilities</h2>
-              <p>Python</p>
-            </a>
+        <div class="box-content h-32 w-72 border-t-2">
+          <div class="flex justify-between">
+            <div>
+              <a href="/cv">CV</a>
+            </div>
+            <div class="text-right">
+                View
+            </div>
           </div>
         </div>
       
