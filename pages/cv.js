@@ -32,20 +32,6 @@ export default function CV() {
         </button>
 
       </main>
-
-      <footer>
-        <div>
-        <a href='mailto:fuglsetm@gmail.com'>
-          Email&nbsp; 
-        </a>
-        <a href='https://github.com/Martinfuglset'>
-          GitHub&nbsp; 
-        </a>
-        <a href='https://www.linkedin.com/in/martinfuglset/'>
-          LinkedIn
-        </a>
-        </div>
-      </footer>
     </div>
   )
 }
