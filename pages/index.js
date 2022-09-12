@@ -2,22 +2,19 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 
-const html = document.querySelector("html");
-
-function myFunction() {
-  if (document.getElementById("switch").innerHTML == "Lights off"){
-    document.getElementById("switch").innerHTML = "Lights on";
-    document.getElementById('im').src="logowhite.svg";
-    html.classList.add("dark");
-  } else {
-    document.getElementById("switch").innerHTML = "Lights off";
-    document.getElementById('im').src="logoblack.svg";
-    html.classList.remove("dark");
-  }
-}
-
-
 export default function Home() {
+  const html = document.querySelector("html");
+  const swit = document.getElementById("switch");
+  
+  function myFunction() {
+    if (swit.innerHTML == "Lights off"){
+      swit.innerHTML = "Lights on";
+      html.classList.add("dark");
+    } else {
+      swit.innerHTML = "Lights off";
+      html.classList.remove("dark");
+    }
+  }  
   return (
     <div class="flex flex-col h-screen justify-between py-6 px-12 bg-[#EFEFEF] text-[#181818] text-lg dark:bg-[#181818] dark:text-[#EFEFEF] tracking-tight">
       <Head>
@@ -28,7 +25,7 @@ export default function Home() {
 
       <header class="flex justify-between">
         <a href='/'>
-          <img type='im' id='im' src='logoblack.svg' class="scale-75"/>
+          Martin Fuglset
         </a>
         <ul class="flex">
           <li>
