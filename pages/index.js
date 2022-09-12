@@ -1,8 +1,9 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div class="flex flex-col h-screen justify-between p-6 bg-[#EFEFEF]">
+    <div class="flex flex-col h-screen justify-between py-6 px-12 bg-[#EFEFEF] text-[#181818] text-lg dark:bg-[#181818] dark:text-[#EFEFEF]">
       <Head>
         <title>Martin Fuglset | Portfolio</title>
         <meta name="description" content="Created by Martin Fuglset" />
@@ -15,69 +16,75 @@ export default function Home() {
         </a>
         <ul class="flex">
           <li>
-              <a href="/" class="mr-4 hover:underline md:mr-10 ">Lights off</a>
+              <a href="/" class="hover:underline">Lights off</a>
           </li>
           <li>
-              <a href="/menu" class="mr-4 hover:underline md:mr-10">Menu</a>
+              <a href="/menu" class="ml-10 hover:underline">Menu</a>
           </li>
         </ul>
       </header>
 
-      <div>
-          <h1 className="text-6xl font-regular leading-loose">
+      <main>
+          <h1 className="text-7xl font-regular leading-loose">
             Portfolio
           </h1>
           
           <div class="h-32"></div>
 
-          <div class="box-content h-32 w-72 border-t-2">
-            <div class="flex justify-between">
-              <div class="hover:underline">
-                <a href="/projects">Projects</a>
-              </div>
-              <div class="text-right">
-                  Housing price analysis<br></br>
-                  NLP image generation<br></br>
-                  Monte Carlo simulation<br></br>
-                  ...
+          <Link href="/projects">
+            <div class="box-content h-32 w-80 border-t py-2 border-[#181818] hover:cursor-pointer hover:underline">
+              <div class="flex justify-between">
+                <div class="hover:underline">
+                  <a>Projects</a>
+                </div>
+                <div class="text-right">
+                    Housing price analysis<br></br>
+                    NLP image generation<br></br>
+                    Monte Carlo simulation<br></br>
+                    ...
+                </div>
               </div>
             </div>
-          </div>
-          <div class="box-content h-32 w-72 border-t-2">
-            <div class="flex justify-between">
-              <div class="hover:underline">
-                <a href="/abilities">Abilites</a>
-              </div>
-              <div class="text-right">
+          </Link>
+          <Link href="/abilities">
+            <div class="box-content h-32 w-80 border-t py-2 border-[#181818] hover:cursor-pointer hover:underline">
+              <div class="flex justify-between">
+                <div class="hover:underline">
+                  <a>Abilities</a>
+                </div>
+                <div class="text-right">
                   Python<br></br>
                   JavaSctipt<br></br>
                   C++<br></br>
-                  ...
+                    ...
+                </div>
               </div>
             </div>
-          </div>
-          <div class="box-content h-32 w-72 border-t-2">
-            <div class="flex justify-between">
-              <div class="hover:underline">
-                <a href="/cv">CV</a>
-              </div>
-              <div class="text-right">
-                  View
+          </Link>
+          <Link href="/cv">
+            <div class="box-content h-32 w-80 border-t py-2 border-[#181818] hover:cursor-pointer hover:underline">
+              <div class="flex justify-between">
+                <div class="hover:underline">
+                  <a>CV</a>
+                </div>
+                <div class="text-right">
+                    View
+                </div>
               </div>
             </div>
-          </div>
-      </div>
+          </Link>
+        </main>
 
       <footer>
             <ul class="flex">
                 <li>
-                    <a href="mailto:fuglsetm@gmail.com" class="mr-4 hover:underline md:mr-10 ">Email</a>
+                    <a href="mailto:fuglsetm@gmail.com" class="hover:underline md:mr-10 ">Email</a>
                 </li>
                 <li>
-                    <a href="https://github.com/Martinfuglset" class="mr-4 hover:underline md:mr-10">GitHub</a>
+                    <a href="https://github.com/Martinfuglset" class="hover:underline md:mr-10">GitHub</a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/martinfuglset/" class="mr-4 hover:underline md:mr-10">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/martinfuglset/" class="hover:underline md:mr-10">LinkedIn</a>
                 </li>
             </ul>
         </footer>
