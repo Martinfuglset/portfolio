@@ -1,25 +1,41 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
+
+const html = document.querySelector("html");
+
+function myFunction() {
+  if (document.getElementById("switch").innerHTML == "Lights off"){
+    document.getElementById("switch").innerHTML = "Lights on";
+    document.getElementById('im').src="logowhite.svg";
+    html.classList.add("dark");
+  } else {
+    document.getElementById("switch").innerHTML = "Lights off";
+    document.getElementById('im').src="logoblack.svg";
+    html.classList.remove("dark");
+  }
+}
+
+
 export default function Home() {
   return (
-    <div class="flex flex-col h-screen justify-between py-6 px-12 bg-[#EFEFEF] text-[#181818] text-lg dark:bg-[#181818] dark:text-[#EFEFEF]">
+    <div class="flex flex-col h-screen justify-between py-6 px-12 bg-[#EFEFEF] text-[#181818] text-lg dark:bg-[#181818] dark:text-[#EFEFEF] tracking-tight">
       <Head>
         <title>Martin Fuglset | Portfolio</title>
         <meta name="description" content="Created by Martin Fuglset" />
         <link rel="icon" href="/Vector.ico" />
-      </Head>
+      </Head>  
 
       <header class="flex justify-between">
         <a href='/'>
-          <img class="scale-75" src='logoblack.svg'></img>
+          <img type='im' id='im' src='logoblack.svg' class="scale-75"/>
         </a>
         <ul class="flex">
           <li>
-              <a href="/" class="hover:underline">Lights off</a>
+              <a type='switch' id='switch' class="hover:underline hover:cursor-pointer" onClick={myFunction} >Lights off</a>
           </li>
           <li>
-              <a href="/menu" class="ml-10 hover:underline">Menu</a>
+              <a href="/menu" class="ml-10 hover:underline hover:cursor-pointer">Menu</a>
           </li>
         </ul>
       </header>
@@ -32,7 +48,7 @@ export default function Home() {
           <div class="h-32"></div>
 
           <Link href="/projects">
-            <div class="box-content h-32 w-80 border-t py-2 border-[#181818] hover:cursor-pointer hover:underline">
+            <div class="box-content h-32 w-80 border-t py-2 border-[#181818] dark:border-[#EFEFEF] hover:cursor-pointer hover:underline">
               <div class="flex justify-between">
                 <div class="hover:underline">
                   <a>Projects</a>
@@ -47,14 +63,14 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/abilities">
-            <div class="box-content h-32 w-80 border-t py-2 border-[#181818] hover:cursor-pointer hover:underline">
+            <div class="box-content h-32 w-80 border-t py-2 border-[#181818] dark:border-[#EFEFEF] hover:cursor-pointer hover:underline">
               <div class="flex justify-between">
                 <div class="hover:underline">
                   <a>Abilities</a>
                 </div>
                 <div class="text-right">
                   Python<br></br>
-                  JavaSctipt<br></br>
+                  JavaScript<br></br>
                   C++<br></br>
                     ...
                 </div>
@@ -62,7 +78,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/cv">
-            <div class="box-content h-32 w-80 border-t py-2 border-[#181818] hover:cursor-pointer hover:underline">
+            <div class="box-content h-32 w-80 border-t py-2 border-[#181818] dark:border-[#EFEFEF] hover:cursor-pointer hover:underline">
               <div class="flex justify-between">
                 <div class="hover:underline">
                   <a>CV</a>
@@ -72,7 +88,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </Link>
+          </Link>             
         </main>
 
       <footer>

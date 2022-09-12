@@ -1,8 +1,9 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div class="flex flex-col h-screen justify-between p-6 bg-[#EFEFEF]">
+    <div class="flex flex-col h-screen justify-between py-6 px-12 bg-[#EFEFEF] text-[#181818] text-lg dark:bg-[#181818] dark:text-[#EFEFEF]">
       <Head>
         <title>Martin Fuglset | Portfolio</title>
         <meta name="description" content="Created by Martin Fuglset" />
@@ -15,24 +16,32 @@ export default function Home() {
         </a>
         <ul class="flex">
           <li>
-              <a href="/" class="mr-4 hover:underline md:mr-10 ">Lights off</a>
+              <a href="/" class="hover:underline">Lights off</a>
           </li>
           <li>
-              <a href="/" class="mr-4 underline md:mr-10">Menu</a>
+              <a href="/menu" class="ml-10 hover:underline">Menu</a>
           </li>
         </ul>
       </header>
-      <ul class="text-end leading-relaxed py-96 text-6xl">
-          <li>
-              <a href="/projects" class="mr-4 hover:underline md:mr-10 ">Projects</a>
-          </li>
-          <li>
-              <a href="/cv" class="mr-4 hover:underline md:mr-10">CV</a>
-          </li>
-          <li>
-              <a href="/abilities" class="mr-4 hover:underline md:mr-10">Abilites</a>
-          </li>
-        </ul>
+
+      <main>
+        <p>Hello</p>
+      </main>
+
+      <footer>
+            <ul class="flex">
+                <li>
+                    <a href="mailto:fuglsetm@gmail.com" class="hover:underline md:mr-10 ">Email</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Martinfuglset" class="hover:underline md:mr-10">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/martinfuglset/" class="hover:underline md:mr-10">LinkedIn</a>
+                </li>
+            </ul>
+        </footer>
     </div>
   )
 }
+
