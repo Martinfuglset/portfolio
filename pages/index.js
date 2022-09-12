@@ -1,6 +1,5 @@
 import Head from 'next/head'
 
-
 export default function Home() {
   return (
     <div class="flex flex-col h-screen justify-between p-6 bg-[#EFEFEF]">
@@ -19,7 +18,7 @@ export default function Home() {
               <a href="/" class="mr-4 hover:underline md:mr-10 ">Lights off</a>
           </li>
           <li>
-              <a href="/" class="mr-4 hover:underline md:mr-10">Menu</a>
+              <a href="/menu" class="mr-4 hover:underline md:mr-10">Menu</a>
           </li>
         </ul>
       </header>
