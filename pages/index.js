@@ -3,16 +3,18 @@ import Link from 'next/link'
 
 
 export default function Home() {
-  const html = document.querySelector("html");
-  const swit = document.getElementById("switch");
-  
-  function myFunction() {
-    if (swit.innerHTML == "Lights off"){
-      swit.innerHTML = "Lights on";
-      html.classList.add("dark");
-    } else {
-      swit.innerHTML = "Lights off";
-      html.classList.remove("dark");
+  if (typeof window !== 'undefined') {
+    const html = document.querySelector("html");
+    const swit = document.getElementById("switch");
+    
+    function myFunction() {
+      if (swit.innerHTML == "Lights off"){
+        swit.innerHTML = "Lights on";
+        html.classList.add("dark");
+      } else {
+        swit.innerHTML = "Lights off";
+        html.classList.remove("dark");
+      }
     }
   }  
   return (
