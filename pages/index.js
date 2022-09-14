@@ -3,18 +3,18 @@ import Link from 'next/link'
 
 
 export default function Home() {
-  const html = document.querySelector("html");
-  const swit = document.getElementById("switch");
+  // const html = document.querySelector("html");
+  // const swit = document.getElementById("switch");
   
-  function myFunction() {
-    if (swit.innerHTML == "Lights off"){
-      swit.innerHTML = "Lights on";
-      html.classList.add("dark");
-    } else {
-      swit.innerHTML = "Lights off";
-      html.classList.remove("dark");
-    }
-  }  
+  // function myFunction() {
+  //   if (swit.innerHTML == "Lights off"){
+  //     swit.innerHTML = "Lights on";
+  //     html.classList.add("dark");
+  //   } else {
+  //     swit.innerHTML = "Lights off";
+  //     html.classList.remove("dark");
+  //   }
+  // }  
   return (
     <div class="flex flex-col h-screen justify-between py-6 px-12 bg-[#EFEFEF] text-[#181818] text-lg dark:bg-[#181818] dark:text-[#EFEFEF] tracking-tight">
       <Head>
@@ -29,7 +29,7 @@ export default function Home() {
         </a>
         <ul class="flex">
           <li>
-              <a type='switch' id='switch' class="hover:underline hover:cursor-pointer" onClick={myFunction} >Lights off</a>
+              <a type='switch' id='switch' class="hover:underline hover:cursor-pointer" >Lights off</a>
           </li>
           <li>
               <a href="/menu" class="ml-10 hover:underline hover:cursor-pointer">Menu</a>
