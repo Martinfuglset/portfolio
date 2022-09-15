@@ -33,7 +33,7 @@ const Header = () => {
   }
 
   return (
-    <header className="h-12 flex items-center justify-between">
+    <header className="h-16 flex items-center justify-between">
       <Link href="/"><a>Martin Fuglset</a></Link>
       <ul className="flex gap-8">
           <a className="hover:cursor-pointer hover:underline">{renderThemeChanger()}</a>
