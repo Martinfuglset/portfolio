@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     <>
       <Head>
         <title>Martin Fuglset | Portfolio</title>
-        <meta name="description" content="Portfolio for Martin Fuglset."/>
+        <meta name="description" content="Portfolio for Martin Fuglset"/>
       </Head>
       <div className="min-h-screen flex flex-col">
         <Header />
