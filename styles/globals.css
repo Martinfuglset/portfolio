@@ -7,5 +7,7 @@
         @apply mx-auto px-10 text-lg tracking-tight;
         @apply bg-[#EFEFEF] text-[#181818];
         @apply dark:bg-[#181818] dark:text-[#EFEFEF];
+        @apply selection:text-[#efefef] selection:bg-[#181818];
+        @apply dark:selection:text-[#181818] dark:selection:bg-[#efefef];
     }
 }

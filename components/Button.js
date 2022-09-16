@@ -1,10 +1,12 @@
+import Link from "next/link"
 
-const Button = ({ children, className, onClick }) => {
+const Button = ({ text, link }) => {
   return (
-    <button 
-        className={className}
-        onClick={onClick}
-    >{children}</button>
+    <Link href={link}>
+      <button className="p-4 hover:bg-[#ff0000] dark:hover:bg-[#ff0000] bg-[#181818] text-[#efefef] dark:bg-[#efefef] dark:text-[#181818]">
+        {text}
+      </button>
+    </Link>
   )
 }
 
