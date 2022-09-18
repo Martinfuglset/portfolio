@@ -1,12 +1,14 @@
 import { useTheme } from "next-themes"
 import Link from "next/link"
 import { useEffect, useState } from "react";
-import Menu from "../components/Menu";
+// import Menu from "../components/Menu";
+// import Modal from "../components/Modal";
 
 const Header = () => {
 
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     setMounted(true);
@@ -53,14 +55,15 @@ const Header = () => {
     }
   }
 
+
   return (
     <header className="h-16 flex items-center justify-between">
       <Link href="/"><a>Martin Fuglset</a></Link>
       <a className="ml-10`">{pageTitle()}</a>
       <ul className="flex gap-8">
           <a className="hover:cursor-pointer hover:underline">{renderThemeChanger()}</a>
-          <a className="hover:cursor-pointer hover:underline" onClick={Menu}>Menu</a>
-      </ul>   
+          <a className="hover:cursor-pointer hover:underline">Menu</a>
+      </ul>
     </header>
   )
 }

@@ -29,8 +29,8 @@ export default function CV() {
               Certifications
             </h1>
             <div class="h-32"></div>
-            <Box2 org={'IBM Python for Data Science, AI & Development'} loc={'jun 2021'} deg={'Link ->'}/>
-            <Box2 org={'Bloomberg Market Concepts'} loc={'oct 2020'} deg={'Link ->'}/>
+            <Box2 org={'IBM Python for Data Science, AI & Development'} loc={'jun 2021'}/>
+            <Box2 org={'Bloomberg Market Concepts'} loc={'oct 2020'}/>
           </div>
         </div>
         <div className='h-32'></div>
