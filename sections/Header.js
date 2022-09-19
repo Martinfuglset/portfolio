@@ -1,6 +1,7 @@
 import { useTheme } from "next-themes"
 import Link from "next/link"
 import { useEffect, useState } from "react";
+import Image from "next/image";
 // import Menu from "../components/Menu";
 // import Modal from "../components/Modal";
 
@@ -34,6 +35,8 @@ const Header = () => {
     }
   }
 
+  const iconsize = 15
+
   function toTitleCase(str) {
     return str.replace(
       /\w\S*/g,
@@ -55,10 +58,14 @@ const Header = () => {
     }
   }
 
-
   return (
     <header className="h-16 flex items-center justify-between">
-      <Link href="/"><a>Martin Fuglset</a></Link>
+      <Link href={"/"}>
+        <div className="flex flex-row gap-x-2 hover:cursor-pointer">
+          <Image src="/icon.svg" width={iconsize} height={iconsize} />
+          <a>Martin Fuglset</a>
+        </div>
+      </Link>
       <a className="ml-10`">{pageTitle()}</a>
       <ul className="flex gap-8">
           <a className="hover:cursor-pointer hover:underline">{renderThemeChanger()}</a>

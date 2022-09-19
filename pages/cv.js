@@ -1,10 +1,14 @@
 import Link from 'next/link'
 import Box2 from '../components/Box2'
 import Button from '../components/Button'
+import Head from 'next/head'
 
 export default function CV() {
   return (
       <main>
+        <Head>
+          <title>Martin Fuglset | CV</title>
+        </Head>
         <div className='flex justify-around px-20 space-x-10'>
           <div>
             <div class="h-32"></div>
