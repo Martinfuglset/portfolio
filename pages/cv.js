@@ -16,7 +16,7 @@ export default function CV() {
               Education
             </h1>
             <div class="h-32"></div>
-            <Box2 org={'Handelshøyskolen BI'} loc={'Oslo, Norway'} deg={'Bachelor of Economics'} per={'aug 2020 - aug 2023'}/>
+            <Box2 org={'Handelshøyskolen BI'} loc={'Oslo, Norway'} deg={'Bachelor of Economics'} per={"aug 2020 - jun 2023"}/>
           </div>
           <div>
             <div class="h-32"></div>
@@ -24,8 +24,8 @@ export default function CV() {
               Experience
             </h1>
             <div class="h-32"></div>
-            <Box2 org={'Fuglset Konsult'} loc={'Oslo, Norway'} deg={'Business Analyst'} per={'nov 2021 - current'}/>
-            <Box2 org={'Equinavia'} loc={'Connecticut, USA'} deg={'Business Analyst'} per={'oct 2019 - jul 2020'} deg2={'Account Manager'} per2={'jun 2018 - jun 2020'}/>
+            <Box2 org={'Fuglset Konsult'} loc={'Oslo, Norway'} deg={'Business Analyst'} per={"nov 2021 - current"}/>
+            <Box2 org={'Equinavia'} loc={'Connecticut, USA'} deg={'Business Analyst'} per={"oct 2019 - jul 2020"} deg2={'Account Manager'} per2={"jun 2018 - jun 2020"}/>
           </div>
           <div>
             <div class="h-32"></div>
@@ -33,8 +33,8 @@ export default function CV() {
               Certifications
             </h1>
             <div class="h-32"></div>
-            <Box2 org={'IBM Python for Data Science, AI & Development'} loc={'jun 2021'}/>
-            <Box2 org={'Bloomberg Market Concepts'} loc={'oct 2020'}/>
+            <Box2 org={'IBM Python for Data Science, AI & Development'} loc={"jun 2021"}/>
+            <Box2 org={'Bloomberg Market Concepts'} loc={"oct 2020"}/>
           </div>
         </div>
         <div className='h-32'></div>

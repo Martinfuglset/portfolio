@@ -10,7 +10,7 @@ module.exports = {
     fontFamily: {
       'sans': ['SuisseIntl', 'system-ui'],
       'serif': ['SuisseWorks', 'ui-serif'],
-      'mono': ['SuisseMono', 'SFMono-Regular'],
+      'mono': ['SuisseIntlMono', 'SFMono-Regular'],
       'display': ['SuisseWorks'],
       'body': ['SuisseIntl'],
     },
