@@ -3,7 +3,7 @@ import Link from "next/link"
 const Button = ({ text, link }) => {
   return (
     <Link href={link}>
-      <button className="p-4 hover:bg-[#ff0000] dark:hover:bg-[#ff0000] bg-[#181818] text-[#efefef] dark:bg-[#efefef] dark:text-[#181818]">
+      <button className="p-4 hover:bg-[#ff4d00] bg-[#181818] text-[#efefef] dark:bg-[#efefef] dark:text-[#181818]">
         {text}
       </button>
     </Link>
