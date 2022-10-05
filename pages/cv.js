@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Box2 from '../components/Box2'
 import Button from '../components/Button'
 import Head from 'next/head'
