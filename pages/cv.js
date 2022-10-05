@@ -39,7 +39,7 @@ export default function CV() {
         </div>
         <div className='h-32'></div>
         <div className='flex justify-center'>
-          <Button text={'Download'} link={'https://drive.google.com/file/d/1yGwirkyA8Mwr1J7GoqDUVsQf0Rrzr1QT/view?usp=sharing'}/>
+          <Button text={'Download'} link={'https://drive.google.com/file/d/1FldL2Z7lvIZHLkLkzfuc2VriUjVzVf4a/view?usp=sharing'}/>
         </div>
       </main>
   )

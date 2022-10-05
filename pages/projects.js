@@ -7,7 +7,8 @@ export default function Projects() {
         <Head>
           <title>Martin Fuglset | Projects</title>
         </Head>
-        <Table />
+        <div className="h-72"></div>
+        <p className="text-center">In progress</p>
       </main>
   )
 }

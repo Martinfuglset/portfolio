@@ -6,6 +6,8 @@ export default function Abilities() {
         <Head>
           <title>Martin Fuglset | Abilities</title>
         </Head>
+        <div className="h-72"></div>
+        <p className="text-center">In progress</p>
       </main>
   )
 }
