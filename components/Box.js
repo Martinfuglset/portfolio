@@ -3,7 +3,7 @@ import Link from "next/link"
 const Box = ({ num }) => {
 
     const categories = [
-        { label: 'Projects', line1: 'Housing price analysis', line2: 'NLP image generation', line3: 'Monte Carlo simulation', dots: '...'},
+        { label: 'Projects', line1: 'Project 1', line2: 'Project 2', line3: 'Project 3', dots: '...'},
         { label: 'Abilities', line1: 'Python', line2: 'JavaScript', line3: 'R', dots: '...'},
         { label: 'CV', line1: 'View', dots: ''},
     ]

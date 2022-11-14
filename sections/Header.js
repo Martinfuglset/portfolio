@@ -62,7 +62,6 @@ const Header = () => {
     <header className="h-16 flex items-center justify-between">
       <Link href={"/"}>
         <div className="flex flex-row gap-x-2 hover:cursor-pointer">
-          <Image src="/icon.svg" width={iconsize} height={iconsize} />
           <a>Martin Fuglset</a>
         </div>
       </Link>

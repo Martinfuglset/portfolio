@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <link rel="icon" href="./icon.svg"/>
+        {/* <link rel="icon" href="./icon.svg"/> */}
         <title>Martin Fuglset | Portfolio</title>
         <meta name="description" content="Portfolio for Martin Fuglset"/>
       </Head>

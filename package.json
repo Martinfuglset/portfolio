@@ -11,6 +11,8 @@
   "dependencies": {
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^2.0.10",
+    "@splinetool/react-spline": "^2.2.3",
+    "@splinetool/runtime": "^0.9.138",
     "next-dark-mode": "^3.0.0",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
