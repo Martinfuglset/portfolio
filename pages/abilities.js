@@ -7,7 +7,7 @@ export default function Abilities() {
           <title>Martin Fuglset | Abilities</title>
         </Head>
         <div className="h-72"></div>
-        <p className="text-center">In progress</p>
+        <p className="text-center">In progress.</p>
       </main>
   )
 }
