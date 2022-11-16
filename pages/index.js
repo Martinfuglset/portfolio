@@ -16,7 +16,7 @@ export default function Home() {
             <Box num={1}/>
             <Box num={2}/>
           </div>
-            <Spline class="scale-75" scene="https://draft.spline.design/gdUyu9GEXtybXavi/scene.splinecode" /> 
+            <Spline class="scale-75" scene="https://draft.spline.design/aMVqo3z2bhQ2CNvk/scene.splinecode" /> 
         </div>
       </main>
   )
