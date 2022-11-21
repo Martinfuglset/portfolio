@@ -49,25 +49,29 @@ const Header = () => {
       return
     } else {
       if(currUrl === '/cv'){
-        return (currUrl.replace("/","/ ").toUpperCase())
+        return (currUrl.replace("/"," / ").toUpperCase())
       } else {
-        return (toTitleCase(currUrl.replace("/","/ ")))
+        return (toTitleCase(currUrl.replace("/"," / ")))
       }
     }
   }
 
   return (
-    <header className="h-16 flex items-center justify-between">
-      <Link href={"/"}>
-        <div className="flex flex-row space-x-1 hover:cursor-pointer">
-          <a>Martin Fuglset</a>
-          <a className="ml-10`"> {pageTitle()}</a>
+    <header>
+      <div className="h-16 items-center flex justify-between">
+        <div className="">
+          <Link href={"/"}>
+            <a className="hover:cursor-pointer">Martin Fuglset</a>
+          </Link>
+          <>{pageTitle()}</>
         </div>
-      </Link>
-      <a>Contact</a>
-      <ul className="flex gap-8">
-          <a className="hover:cursor-pointer hover:underline">{renderThemeChanger()}</a>
-      </ul>
+        <div className="">
+          <a className="">Contact</a>
+        </div>
+        <div className="">
+          <a className="hover:cursor-pointer">{renderThemeChanger()}</a>
+        </div>
+      </div>
     </header>
   )
 }

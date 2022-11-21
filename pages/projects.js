@@ -4,7 +4,7 @@ export default function Projects() {
   return (
       <main>
         <Head>
-          <title>Martin Fuglset | Projects</title>
+          <title>Martin Fuglset / Projects</title>
         </Head>
       </main>
   )
