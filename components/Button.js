@@ -3,7 +3,23 @@ import Link from "next/link"
 const Button = ({ text, link }) => {
   return (
     <Link href={link}>
-      <button className="p-4 hover:bg-[#ff4D00] dark:hover:bg-[#ff4D00] bg-[#181818] text-[#efefef] dark:bg-[#efefef] dark:text-[#181818]">
+      <button className="
+      p-3
+      border-2
+
+      bg-[#fff]
+      text-[#000]
+      border-[#000]
+      hover:bg-[#000]
+      hover:text-[#fff]
+      
+      dark:bg-[#000]
+      dark:text-[#fff]
+      dark:border-[#fff]
+      dark:hover:bg-[#fff]
+      dark:hover:text-[#000]
+      "
+      >
         {text}
       </button>
     </Link>

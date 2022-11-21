@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['SuisseIntl', 'system-ui'],
+      'sans': ['SuisseIntl-regular', 'system-ui'],
       'serif': ['SuisseWorks', 'ui-serif'],
       'mono': ['SuisseIntlMono', 'SFMono-Regular'],
       'display': ['SuisseWorks'],

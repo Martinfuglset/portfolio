@@ -1,15 +1,11 @@
 import { useTheme } from "next-themes"
 import Link from "next/link"
 import { useEffect, useState } from "react";
-import Image from "next/image";
-// import Menu from "../components/Menu";
-// import Modal from "../components/Modal";
 
 const Header = () => {
 
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     setMounted(true);
@@ -35,8 +31,6 @@ const Header = () => {
     }
   }
 
-  const iconsize = 15
-
   function toTitleCase(str) {
     return str.replace(
       /\w\S*/g,
@@ -51,24 +45,28 @@ const Header = () => {
 
     const currUrl = window.location.pathname;
 
-    if(currUrl === '/cv'){
-      return (currUrl.replace("/","").toUpperCase())
+    if(currUrl === '/'){
+      return
     } else {
-      return (toTitleCase(currUrl.replace("/","")))
+      if(currUrl === '/cv'){
+        return (currUrl.replace("/","/ ").toUpperCase())
+      } else {
+        return (toTitleCase(currUrl.replace("/","/ ")))
+      }
     }
   }
 
   return (
     <header className="h-16 flex items-center justify-between">
       <Link href={"/"}>
-        <div className="flex flex-row gap-x-2 hover:cursor-pointer">
+        <div className="flex flex-row space-x-1 hover:cursor-pointer">
           <a>Martin Fuglset</a>
+          <a className="ml-10`"> {pageTitle()}</a>
         </div>
       </Link>
-      <a className="ml-10`">{pageTitle()}</a>
+      <a>Contact</a>
       <ul className="flex gap-8">
           <a className="hover:cursor-pointer hover:underline">{renderThemeChanger()}</a>
-          <a className="hover:cursor-pointer hover:underline">Menu</a>
       </ul>
     </header>
   )
