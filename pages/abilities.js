@@ -1,6 +1,6 @@
 import Head from "next/head"
 import React from 'react'
-import Table from '/Users/martinfuglset/Dev/portfolio/components/Table.js'
+import Table from '../components/Table'
 
 const data = [
   {
@@ -20,7 +20,7 @@ export default function Abilities() {
         <Head>
           <title>Martin Fuglset / Abilities</title>
         </Head>
-        <div>{App()}</div>
+        {/* <div>{App()}</div> */}
 
       </main>
   )
