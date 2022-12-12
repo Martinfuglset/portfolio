@@ -57,23 +57,17 @@ const Header = () => {
   }
 
   return (
-    <header>
-      <div className="h-16 items-center flex justify-between">
-        <div className="">
-          <Link href={"/"}>
-            <a className="hover:cursor-pointer">Martin Fuglset</a>
-          </Link>
-          <>{pageTitle()}</>
+        <div className="flex items-center justify-between h-16">
+          <div className="">
+            <Link href={"/"}>
+              <a className="hover:cursor-pointer">Martin Fuglset</a>
+            </Link>
+            <>{pageTitle()}</>
+          </div>
+          <div className="">Contact</div>
+          <div className=""><a className="hover:cursor-pointer">{renderThemeChanger()}</a></div>
         </div>
-        <div className="">
-          <a className="">Contact</a>
-        </div>
-        <div className="">
-          <a className="hover:cursor-pointer">{renderThemeChanger()}</a>
-        </div>
-      </div>
-    </header>
-  )
-}
+      )
+    }
 
 export default Header
